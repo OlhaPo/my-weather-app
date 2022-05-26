@@ -85,6 +85,11 @@
   line-height: 260%;
 }
 
+.footer {
+  text-align: center;
+  margin: 20px auto;
+}
+
 #search-input {
   padding: 7px;
   border-radius: 10px;
