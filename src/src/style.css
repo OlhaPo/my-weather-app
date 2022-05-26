@@ -1,0 +1,109 @@
+.app-container {
+  font-family: "Roboto", sans-serif;
+  max-width: 700px;
+  min-width: 440px;
+  margin: 10px auto;
+  border: 1px solid #70757a;
+  padding: 20px 40px;
+  border-radius: 10px;
+}
+
+.location-input-container {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.search-icon {
+  position: relative;
+  left: 15px;
+  bottom: -11px;
+  color: #74c0fc;
+  font-size: 20px;
+}
+
+#location-name {
+  font-size: 80px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 13px;
+  color: #4d4d4d;
+}
+
+#current-date-time {
+  font-size: 26px;
+  text-align: center;
+  font-weight: normal;
+  margin-top: 50px;
+  color: #4d4d4d;
+}
+
+.current-condition {
+  font-size: 20px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  color: #70757a;
+}
+
+.current-weather img {
+  width: 95px;
+}
+
+.current-temperature {
+  font-size: 70px;
+}
+
+.unit-buttons button {
+  text-decoration: none;
+  color: #4d4d4d;
+  font-size: 20px;
+}
+
+.degree-active {
+  font-weight: bold;
+}
+
+.extended-forecast-tittle {
+  font-size: 19px;
+  font-weight: normal;
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+
+.extended-forecast {
+  font-size: 17px;
+}
+
+.extended-forecast .row {
+  border-top: 1px solid #74c0fc;
+  padding: 5px 0;
+}
+
+.extended-forecast .column-temp {
+  text-align: right;
+  font-size: 20px;
+  line-height: 260%;
+}
+
+#search-input {
+  padding: 7px;
+  border-radius: 10px;
+  border: 1px solid #74c0fc;
+  background-color: rgb(116, 192, 252, 0.1);
+}
+
+#submit-button {
+  border-radius: 10px;
+  border: 1px solid #74c0fc;
+  background-color: rgb(116, 192, 252, 0.1);
+  color: #70757a;
+  padding: 7px;
+}
+
+#geolocation-button {
+  border-radius: 10px;
+  border: 1px solid #74c0fc;
+  background-color: rgb(116, 192, 252, 0.1);
+  color: #70757a;
+  padding: 7px;
+}
