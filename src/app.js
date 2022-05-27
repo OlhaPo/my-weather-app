@@ -8,8 +8,8 @@ let days = [
   "Tuesday",
   "Wednesday",
   "Thursday",
+  "Friday",
   "Saturday",
-  "Monday",
 ];
 
 let day = days[currentDateTime.getDay()];
