@@ -1,22 +1,25 @@
-let currentDateTime = new Date();
-
-let h2 = document.querySelector("h2");
-
-let days = [
-  "Sunday",
-  "Monday",
-  "Tuesday",
-  "Wednesday",
-  "Thursday",
-  "Friday",
-  "Saturday",
-];
-
-let day = days[currentDateTime.getDay()];
-let hours = currentDateTime.getHours();
-let minutes = currentDateTime.getMinutes().toString();
-
-h2.innerHTML = `${day} ${hours}:${minutes.padStart(2, "0")}`;
+function formatDate(timestamp) {
+  let date = new Date(timestamp);
+  let days = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+  let day = days[date.getDay()];
+  let hours = date.getHours();
+  if (hours < 10) {
+    hours = `0${hours}`;
+  }
+  let minutes = date.getMinutes();
+  if (minutes < 10) {
+    minutes = `0${minutes}`;
+  }
+  return `${day} ${hours}:${minutes}`;
+}
 
 let searchButton = document.querySelector("#submit-button");
 let geolocationButton = document.querySelector("#geolocation-button");
@@ -64,5 +67,8 @@ function showTemperature(response) {
   document.querySelector("#humidity").innerHTML = response.data.main.humidity;
   document.querySelector("#wind-speed").innerHTML = Math.round(
     response.data.wind.speed
+  );
+  document.querySelector("#date").innerHTML = formatDate(
+    response.data.dt * 1000
   );
 }
