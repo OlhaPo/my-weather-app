@@ -55,10 +55,14 @@ function getWeather(q, coords) {
 }
 
 function showTemperature(response) {
-  let temperature = Math.round(response.data.main.temp);
-  let temperatureElement = document.querySelector("#current-degree");
-  temperatureElement.innerHTML = temperature;
-  let city = response.data.name;
-  let cityElement = document.querySelector("#location-name");
-  cityElement.innerHTML = city;
+  document.querySelector("#current-degree").innerHTML = Math.round(
+    response.data.main.temp
+  );
+  document.querySelector("#location-name").innerHTML = response.data.name;
+  document.querySelector("#description").innerHTML =
+    response.data.weather[0].main;
+  document.querySelector("#humidity").innerHTML = response.data.main.humidity;
+  document.querySelector("#wind-speed").innerHTML = Math.round(
+    response.data.wind.speed
+  );
 }
