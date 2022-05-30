@@ -1,3 +1,20 @@
+ul {
+  margin: 50px 0;
+  padding: 0;
+}
+
+li {
+  font-size: 20px;
+  color: #70757a;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li:first-letter {
+  text-transform: capitalize;
+}
+
 .app-container {
   font-family: "Roboto", sans-serif;
   max-width: 700px;
@@ -38,15 +55,9 @@
   color: #4d4d4d;
 }
 
-.current-condition {
-  font-size: 20px;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  color: #70757a;
-}
-
 .current-weather img {
-  width: 95px;
+  width: 120px;
+  height: 120px;
 }
 
 .current-temperature {
