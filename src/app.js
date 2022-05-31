@@ -26,9 +26,6 @@ let geolocationButton = document.querySelector("#geolocation-button");
 searchButton.addEventListener("click", searchTemperature);
 geolocationButton.addEventListener("click", geolocationButtonClick);
 
-let celsiusTempButton = document.querySelector("#celsiusButton");
-celsiusTempButton.addEventListener("click", showDegreeCelsius);
-
 function searchTemperature(event) {
   event.preventDefault();
   let searchInput = document.querySelector("#search-input");
@@ -61,6 +58,9 @@ function showTemperature(response) {
   document.querySelector("#current-degree").innerHTML = Math.round(
     response.data.main.temp
   );
+
+  celsiusTemperature = response.data.main.temp;
+
   document.querySelector("#location-name").innerHTML = response.data.name;
   document.querySelector("#description").innerHTML =
     response.data.weather[0].description;
@@ -78,3 +78,31 @@ function showTemperature(response) {
   );
   iconElement.setAttribute("alt", response.data.weather[0].description);
 }
+
+function showFahrenheitTemp(event) {
+  event.preventDefault();
+
+  celsiusButton.classList.remove("degree-active");
+  fahrenheitButton.classList.add("degree-active");
+
+  let fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
+  document.querySelector("#current-degree").innerHTML = Math.round(
+    fahrenheitTemperature
+  );
+}
+
+function showCelsiusTemp(event) {
+  event.preventDefault();
+  celsiusButton.classList.add("degree-active");
+  fahrenheitButton.classList.remove("degree-active");
+  document.querySelector("#current-degree").innerHTML =
+    Math.round(celsiusTemperature);
+}
+
+let celsiusTemperature = null;
+
+let fahrenheitButton = document.querySelector("#fahrenheitButton");
+fahrenheitButton.addEventListener("click", showFahrenheitTemp);
+
+let celsiusButton = document.querySelector("#celsiusButton");
+celsiusButton.addEventListener("click", showCelsiusTemp);
