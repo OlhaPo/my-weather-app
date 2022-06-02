@@ -72,28 +72,36 @@ li:first-letter {
 
 .unit-buttons .degree-active {
   font-weight: bold;
+  color: #333333;
+  font-size: 22px;
 }
 
 .extended-forecast-tittle {
-  font-size: 19px;
+  font-size: 20px;
+  color: #70757a;
   font-weight: normal;
   margin-top: 50px;
   margin-bottom: 10px;
 }
 
 .extended-forecast {
-  font-size: 17px;
+  font-size: 19px;
+}
+
+.extended-forecast img {
+  width: 90px;
+  vertical-align: middle;
 }
 
 .extended-forecast .row {
   border-top: 1px solid #74c0fc;
-  padding: 5px 0;
+  line-height: 4.2;
 }
 
 .extended-forecast .column-temp {
   text-align: right;
   font-size: 20px;
-  line-height: 260%;
+  line-height: 4.2;
 }
 
 .extended-forecast-temp-min {
