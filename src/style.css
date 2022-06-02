@@ -55,23 +55,6 @@ a:hover {
   font-size: 20px;
 }
 
-#location-name {
-  font-size: 80px;
-  font-weight: bold;
-  text-align: center;
-  margin-top: 80px;
-  margin-bottom: 13px;
-  color: #333333;
-}
-
-#date {
-  font-size: 26px;
-  text-align: center;
-  font-weight: normal;
-  margin-top: 50px;
-  color: #333333;
-}
-
 .current-weather img {
   width: 120px;
   height: 120px;
@@ -79,14 +62,6 @@ a:hover {
 
 .current-temperature {
   font-size: 79px;
-}
-
-#celsiusUnit {
-  font-size: 25px;
-  font-weight: 700;
-  color: #333333;
-  position: relative;
-  top: -34px;
 }
 
 .extended-forecast-tittle {
@@ -147,4 +122,29 @@ a:hover {
   background-color: rgb(116, 192, 252, 0.3);
   color: #70757a;
   padding: 7px;
+}
+
+#location-name {
+  font-size: 80px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 13px;
+  color: #333333;
+}
+
+#date {
+  font-size: 26px;
+  text-align: center;
+  font-weight: normal;
+  margin-top: 50px;
+  color: #333333;
+}
+
+#celsiusUnit {
+  font-size: 25px;
+  font-weight: 700;
+  color: #333333;
+  position: relative;
+  top: -34px;
 }
