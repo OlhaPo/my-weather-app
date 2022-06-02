@@ -96,6 +96,10 @@ li:first-letter {
   line-height: 260%;
 }
 
+.extended-forecast-temp-min {
+  color: #70757a;
+}
+
 .footer {
   text-align: center;
   margin: 20px auto;
@@ -109,14 +113,6 @@ li:first-letter {
 }
 
 #submit-button {
-  border-radius: 10px;
-  border: 1px solid #74c0fc;
-  background-color: rgb(116, 192, 252, 0.1);
-  color: #70757a;
-  padding: 7px;
-}
-
-#geolocation-button {
   border-radius: 10px;
   border: 1px solid #74c0fc;
   background-color: rgb(116, 192, 252, 0.1);
