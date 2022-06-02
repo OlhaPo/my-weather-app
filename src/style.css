@@ -1,3 +1,9 @@
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: rgb(76, 132, 146, 0.5);
+  margin-top: 50px;
+}
+
 ul {
   margin: 50px 0;
   padding: 0;
@@ -5,7 +11,7 @@ ul {
 
 li {
   font-size: 20px;
-  color: #70757a;
+  color: #333333;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -15,12 +21,22 @@ li:first-letter {
   text-transform: capitalize;
 }
 
+a {
+  color: #ee8466;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ee8466;
+  text-decoration: underline;
+}
+
 .app-container {
-  font-family: "Roboto", sans-serif;
+  background-color: rgb(247, 224, 163, 0.9);
   max-width: 700px;
   min-width: 440px;
-  margin: 10px auto;
-  border: 1px solid #70757a;
+  margin: 20px auto;
+  border: 2px solid #4c8492;
   padding: 20px 40px;
   border-radius: 10px;
 }
@@ -34,7 +50,7 @@ li:first-letter {
   position: relative;
   left: 15px;
   bottom: -11px;
-  color: #74c0fc;
+  color: #4c8492;
   font-size: 20px;
 }
 
@@ -44,7 +60,7 @@ li:first-letter {
   text-align: center;
   margin-top: 80px;
   margin-bottom: 13px;
-  color: #4d4d4d;
+  color: #333333;
 }
 
 #date {
@@ -52,7 +68,7 @@ li:first-letter {
   text-align: center;
   font-weight: normal;
   margin-top: 50px;
-  color: #4d4d4d;
+  color: #333333;
 }
 
 .current-weather img {
@@ -67,7 +83,7 @@ li:first-letter {
 .unit-buttons button {
   text-decoration: none;
   font-size: 20px;
-  color: #4d4d4d;
+  color: #333333;
 }
 
 .unit-buttons .degree-active {
@@ -78,7 +94,7 @@ li:first-letter {
 
 .extended-forecast-tittle {
   font-size: 20px;
-  color: #70757a;
+  color: #333333;
   font-weight: normal;
   margin-top: 50px;
   margin-bottom: 10px;
@@ -94,7 +110,7 @@ li:first-letter {
 }
 
 .extended-forecast .row {
-  border-top: 1px solid #74c0fc;
+  border-top: 2px solid #4c8492;
   line-height: 4.2;
 }
 
@@ -104,26 +120,33 @@ li:first-letter {
   line-height: 4.2;
 }
 
+.extended-forecast-temp-max {
+  font-weight: bold;
+}
+
 .extended-forecast-temp-min {
-  color: #70757a;
+  color: #333333;
 }
 
 .footer {
+  font-size: 20px;
   text-align: center;
-  margin: 20px auto;
+  margin: 40px auto;
+  line-height: 20px;
+  color: #333333;
 }
 
 #search-input {
   padding: 7px;
   border-radius: 10px;
-  border: 1px solid #74c0fc;
-  background-color: rgb(116, 192, 252, 0.1);
+  border: 2px solid #4c8492;
+  background-color: rgb(116, 192, 252, 0.3);
 }
 
 #submit-button {
   border-radius: 10px;
-  border: 1px solid #74c0fc;
-  background-color: rgb(116, 192, 252, 0.1);
+  border: 2px solid #4c8492;
+  background-color: rgb(116, 192, 252, 0.3);
   color: #70757a;
   padding: 7px;
 }
