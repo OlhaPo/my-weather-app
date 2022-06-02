@@ -10,7 +10,7 @@ ul {
 }
 
 li {
-  font-size: 20px;
+  font-size: 22px;
   color: #333333;
   list-style: none;
   padding: 0;
@@ -22,8 +22,9 @@ li:first-letter {
 }
 
 a {
-  color: #ee8466;
+  color: #4c8492;
   text-decoration: none;
+  font-weight: 400;
 }
 
 a:hover {
@@ -77,27 +78,23 @@ a:hover {
 }
 
 .current-temperature {
-  font-size: 70px;
+  font-size: 79px;
 }
 
-.unit-buttons button {
-  text-decoration: none;
-  font-size: 20px;
+#celsiusUnit {
+  font-size: 25px;
+  font-weight: 700;
   color: #333333;
-}
-
-.unit-buttons .degree-active {
-  font-weight: bold;
-  color: #333333;
-  font-size: 22px;
+  position: relative;
+  top: -34px;
 }
 
 .extended-forecast-tittle {
-  font-size: 20px;
+  font-size: 22px;
+  font-weight: 500;
   color: #333333;
-  font-weight: normal;
-  margin-top: 50px;
-  margin-bottom: 10px;
+  margin-top: 70px;
+  margin-bottom: 20px;
 }
 
 .extended-forecast {
@@ -134,6 +131,7 @@ a:hover {
   margin: 40px auto;
   line-height: 20px;
   color: #333333;
+  font-weight: normal;
 }
 
 #search-input {
